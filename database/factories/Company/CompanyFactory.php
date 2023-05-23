@@ -3,6 +3,8 @@
 namespace Database\Factories\Company;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Company\Company>
@@ -17,7 +19,36 @@ class CompanyFactory extends Factory
     public function definition()
     {
         return [
-            //
+            
+            
+           
+            'account_created_by' => fake()->randomElement([1 ,2, 3]),
+            'name' => fake()->name(),
+            'mobile'=> fake()->unique()->phoneNumber(),
+            'email' => fake()->unique()->safeEmail(),
+            'company_id' => 'COMP' . Str::random(10),
+            'title' => fake()->randomElement(['Mrs.' ,'Mr.', 'Miss']),
+            'company_name' => fake()->company(),            
+            'industry_type' => fake()->randomElement([1 ,2, 3]),
+            'address' =>  fake()->address(),
+            'identity_type' => fake()->randomElement([1 ,2, 3]),
+            'pan'=> 'PAN' . Str::random(10),
+            'gstno'=> 'GST' . Str::random(10),
+            'registration_approved' => fake()->randomElement([1 ,2]),
+            'status'=> fake()->randomElement([1 ,2 , 3]),
+            'fcm_token'=> 'FCM' . Str::random(10),
+            'device_token'=> 'DTK' . Str::random(10),
+            'email_verified_at' => now(),
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'remember_token' => Str::random(10),
+
+            // 'name' =>$this->faker->name(),
+            // 'cat_name'=> $this->faker->title(),
+            // 'details' => $this->faker->paragraph(),
+            // 'price'   => $this->faker->numberBetween($min = 1000, $max = 9000),
+            // 'image'   => $this->faker->sha1(),
+            // 'status'  => $this->faker->randomElement(['active','inactivate','canceled']),
+            // 'cat_id'  => Product::all()->random()->id,
         ];
     }
 }

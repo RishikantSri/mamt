@@ -15,5 +15,11 @@ class CompanySeeder extends Seeder
     public function run()
     {
         //
+        \App\Models\Company\Company::factory(5)->create();
+
+        \App\Models\Company\Company::factory()->create([
+            'name' => 'Test Company',
+            'email' => 'company@company.com',
+        ]);
     }
 }

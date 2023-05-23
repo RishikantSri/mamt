@@ -15,5 +15,11 @@ class SuperAdminSeeder extends Seeder
     public function run()
     {
         //
+        \App\Models\SuperAdmin\SuperAdmin::factory(5)->create();
+
+        \App\Models\SuperAdmin\SuperAdmin::factory()->create([
+            'name' => 'Test Admin',
+            'email' => 'admin@admin.com',
+        ]);
     }
 }
