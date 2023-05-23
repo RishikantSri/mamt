@@ -29,7 +29,7 @@ return new class extends Migration
             $table->string('pan')->nullable();
             $table->string('gstno')->nullable();
             $table->integer('registration_approved')->nullable()->default(0);
-            $table->integer('status')->nullable();
+            $table->String('status')->nullable();
             $table->string('fcm_token')->nullable();
             $table->string('device_token')->nullable();
             $table->timestamp('email_verified_at')->nullable();

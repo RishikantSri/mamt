@@ -35,7 +35,7 @@ class CompanyFactory extends Factory
             'pan'=> 'PAN' . Str::random(10),
             'gstno'=> 'GST' . Str::random(10),
             'registration_approved' => fake()->randomElement([1 ,2]),
-            'status'=> fake()->randomElement([1 ,2 , 3]),
+            'status' => fake()->randomElement(['Pending' ,'Active', 'Cancelled']),
             'fcm_token'=> 'FCM' . Str::random(10),
             'device_token'=> 'DTK' . Str::random(10),
             'email_verified_at' => now(),
