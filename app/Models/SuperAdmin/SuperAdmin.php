@@ -10,11 +10,7 @@ class SuperAdmin extends Authenticatable
 {
     use HasFactory;
    
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    protected $guarded = [];  
 
     protected $hidden = [
         'password',
