@@ -40,17 +40,15 @@ Route::group(['prefix' => 'superadmin', 'as' => 'superadmin.'], function() {
 
 Route::group(['prefix' => 'company', 'as' => 'company.'], function() {
     Route::group(['middleware' => 'company.guest'], function(){
-        Route::get('/login',function () {
-            echo "Company Login";
-        })->name('login');
+        Route::get('/login',[App\Http\Controllers\Company\AuthController::class, 'login'])->name('login');
+        Route::post('/adminlogin',[App\Http\Controllers\Company\AuthController::class, 'loginAuthenticate'])->name('auth');
         
        
     });
 
     Route::group(['middleware' => 'company.auth'], function(){
-        Route::get('/dashboard',function () {
-            echo "Company Dashboard";
-        })->name('dashboard');
+        Route::get('/dashboard',[App\Http\Controllers\Company\AuthController::class, 'dashboard'])->name('dashboard');
+       Route::post('/logout', [App\Http\Controllers\Company\AuthController::class, 'logout'])->name('logout');
        
     });
 });
@@ -58,17 +56,18 @@ Route::group(['prefix' => 'company', 'as' => 'company.'], function() {
 // all Employee routes: starts
 
 Route::group(['prefix' => 'employee', 'as' => 'employee.'], function() {
+    
     Route::group(['middleware' => 'employee.guest'], function(){
-        Route::get('/login',function () {
-            echo "Employee Login";
-        })->name('login');
+        Route::get('/login',[App\Http\Controllers\Employee\AuthController::class, 'login'])->name('login');
+        Route::post('/adminlogin',[App\Http\Controllers\Employee\AuthController::class, 'loginAuthenticate'])->name('auth');
        
     });
 
+
+
     Route::group(['middleware' => 'employee.auth'], function(){
-        Route::get('/dashboard',function () {
-            echo "Employee Dashboard";
-        })->name('dashboard');
+        Route::get('/dashboard',[App\Http\Controllers\Employee\AuthController::class, 'dashboard'])->name('dashboard');
+       Route::post('/logout', [App\Http\Controllers\Employee\AuthController::class, 'logout'])->name('logout');
     });
 });
 

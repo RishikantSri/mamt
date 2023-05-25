@@ -37,6 +37,6 @@ class AuthController extends Controller
 
     public function dashboard() {
 
-             return view('backend.superadmin.partials.dashboard');
+             return view('backend.superadmin.dashboard');
     }
 }
