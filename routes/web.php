@@ -20,18 +20,18 @@ Route::get('/', function () {
 
 // all SuperAdmin routes: starts
 
+
 Route::group(['prefix' => 'superadmin', 'as' => 'superadmin.'], function() {
     Route::group(['middleware' => 'superadmin.guest'], function(){
-        Route::get('/login',function () {
-            echo "Admin Login";
-        })->name('login');
+        Route::get('/login',[App\Http\Controllers\SuperAdmin\AuthController::class, 'login'])->name('login');
+        Route::post('/adminlogin',[App\Http\Controllers\SuperAdmin\AuthController::class, 'loginAuthenticate'])->name('auth');
 
     });
 
     Route::group(['middleware' => 'superadmin.auth'], function(){
-        Route::get('/dashboard',function () {
-            echo "Admin Dashboard";
-        })->name('dashboard');
+       Route::get('/dashboard',[App\Http\Controllers\SuperAdmin\AuthController::class, 'dashboard'])->name('dashboard');
+       Route::post('/logout', [App\Http\Controllers\SuperAdmin\AuthController::class, 'logout'])->name('logout');
+
     });
 });
 

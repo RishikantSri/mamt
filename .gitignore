@@ -16,3 +16,8 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# backend files added for view need to upload separetly. 
+# These are local files not CDNs, extract backend.zip file 
+/public/backend
+# 
