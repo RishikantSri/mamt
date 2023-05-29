@@ -56,6 +56,9 @@ Route::group(['prefix' => 'company', 'as' => 'company.'], function() {
     Route::group(['middleware' => 'company.auth'], function(){
         Route::get('/dashboard',[App\Http\Controllers\Company\AuthController::class, 'dashboard'])->name('dashboard');
        Route::post('/logout', [App\Http\Controllers\Company\AuthController::class, 'logout'])->name('logout');
+
+       Route::get('/employee/register',[App\Http\Controllers\Company\EmployeeController::class, 'registerEmployee'])->name('registeremployee');
+       Route::post('/employee/register/store',[\App\Http\Controllers\Company\EmployeeController::class, 'storeEmployee'])->name('store.employee');
        
     });
 });

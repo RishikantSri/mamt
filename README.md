@@ -15,7 +15,9 @@ This project has three different users with their different Models, Tables, Gaur
 - **[MAMT: Company migration updated ](https://github.com/RishikantSri/mamt/commit/2527327f442644ad24dd1aae0c8c649bef292811)**
 - **[MAMT: Providers and Gaurds are added Config/Auth.php ](https://github.com/RishikantSri/mamt/commit/5f6a14c0b12443e31b4e700971635e343f3a8d57)**
 - **[MAMT: Middleware added, routes added with groups ](https://github.com/RishikantSri/mamt/commit/bb68e2105d31c82aa5bf5c9366f55e4c83bfa6e0)**
-- **[MAMT: Super Admin Login functionality, View, Routes added ](https://github.com/RishikantSri/mamt/commit/c56deaa03b4f2e20ef5cb3d147bf1c75a19c583b)**
-- **[MAMT: Company and Employee Login functionality, View, Routes added ](https://github.com/RishikantSri/mamt/commit/c56deaa03b4f2e20ef5cb3d147bf1c75a19c583b)**
+- **[MAMT: Super Admin Login functionality, View, Routes  ](https://github.com/RishikantSri/mamt/commit/c56deaa03b4f2e20ef5cb3d147bf1c75a19c583b)**
+- **[MAMT: Company and Employee Login functionality, View, Routes ](https://github.com/RishikantSri/mamt/commit/c56deaa03b4f2e20ef5cb3d147bf1c75a19c583b)**
+- **[MAMT: New Company Registration in Super Admin Dashboard ](https://github.com/RishikantSri/mamt/commit/4f5a134af30cb95446b55367ec729a7b2fd3d221)**
+- **[MAMT: New Employee Registration in Company Dashboard ]()**
 
 
