@@ -1,66 +1,21 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## About Tweet Project
+MAMT : Multi Auth with Multi Tables 
+This project has three different users with their different Models, Tables, Gaurds, and Providers respectively.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **[MAMT: Laravel 9 Initial Installation ](https://github.com/RishikantSri/mamt/commit/7fb48d90a2e1d7bcb6825b30ef751a21defe2945)**
+- **[MAMT : Models, Migration, Factory, Seederd base classe created using command](https://github.com/RishikantSri/mamt/commit/92c4cf80310c8fd562bb22d52b1a7d213d8c2b7b)**
+- **[MAMT : Storing data to database](https://github.com/RishikantSri/MAMT/commit/8b98e09bc9addc8ad7c1fcc4202e8900a6ab4681)**
+- **[MAMT : Migration files are updated and migrated ](https://github.com/RishikantSri/mamt/commit/83af8825e6ab0a4a6d17a9e489d7d43b521ed76c)**
+- **[MAMT : Models are updated](https://github.com/RishikantSri/mamt/commit/f2094c88f86d872a0c9cf9927443073caec245ed)**
+- **[MAMT : Factory, seeder updated. Ran Seeder](https://github.com/RishikantSri/mamt/commit/76a8a61a89277cd889f398b31abfdade93830516)**
+- **[MAMT: Company migration updated ](https://github.com/RishikantSri/mamt/commit/2527327f442644ad24dd1aae0c8c649bef292811)**
+- **[MAMT: Providers and Gaurds are added Config/Auth.php ](https://github.com/RishikantSri/mamt/commit/5f6a14c0b12443e31b4e700971635e343f3a8d57)**
+- **[MAMT: Middleware added, routes added with groups ](https://github.com/RishikantSri/mamt/commit/bb68e2105d31c82aa5bf5c9366f55e4c83bfa6e0)**
+- **[MAMT: Super Admin Login functionality, View, Routes added ](https://github.com/RishikantSri/mamt/commit/c56deaa03b4f2e20ef5cb3d147bf1c75a19c583b)**
+- **[MAMT: Company and Employee Login functionality, View, Routes added ](https://github.com/RishikantSri/mamt/commit/c56deaa03b4f2e20ef5cb3d147bf1c75a19c583b)**
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

@@ -11,3 +11,11 @@ onclick="event.preventDefault();
      @csrf
  </form>
 </a>
+
+<br>
+<a class="nav-link" href="{{ route('superadmin.registercompany') }}">
+    Register Company!
+
+</a>
+
+
