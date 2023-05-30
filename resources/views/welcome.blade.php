@@ -42,13 +42,13 @@
             This project has three different users with their different Models, Tables, Gaurds, and Providers respectively.
             <ul>
                 <li>
-                <a href="https://">Super Admin Login </a>
+                <a href="{{ route('superadmin.login') }}">Super Admin Login </a>  <br><small> admin@admin.com : password  </small>
                 </li>
                 <li>
-                    <a href="https://">Company Login </a>
+                    <a href="{{ route('company.login') }}">Company Login </a>  <br><small> company@company.com : password  </small>
                 </li>
                 <li>
-                    <a href="https://">Employee Login </a>
+                    <a href="{{ route('employee.login') }}">Employee Login </a> <br><small> employee@employee.com : password  </small>
                 </li>
             </ul>    
             </p>
