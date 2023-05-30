@@ -1,7 +1,7 @@
 
 
 
-## About Tweet Project
+## About MAMT Project
 MAMT : Multi Auth with Multi Tables 
 This project has three different users with their different Models, Tables, Gaurds, and Providers respectively.
 
